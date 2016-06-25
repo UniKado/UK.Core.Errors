@@ -14,5 +14,5 @@ warnings and notices.
 ## Installation
 
 ```bash
-composer require uk/dynamic-properties
+composer require unikado/core.errors
 ```
