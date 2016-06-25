@@ -1,0 +1,28 @@
+{
+    "name": "unikado/core.errors",
+    "description": "The UniKado core exceptions and error handler.",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "UniKado",
+            "email": "unikado+pubcode@protonmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.4.*"
+    },
+    "autoload": {
+        "files": [
+            "src/UK/errorhandler.php"
+        ],
+        "psr-0": {
+            "UK\\": "src/"
+        }
+    }
+}
