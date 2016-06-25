@@ -1,7 +1,9 @@
 build:
     environment:
         php:
-            version: 7.0
+            version: 7.0.3
+            ini:
+                'date.timezone': 'UTC'
     tests:
         override:
             -
