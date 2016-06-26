@@ -14,5 +14,5 @@ warnings and notices.
 ## Installation
 
 ```bash
-composer require unikado/core.errors
+composer require uk/core.errors
 ```
