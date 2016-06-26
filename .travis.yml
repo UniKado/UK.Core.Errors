@@ -23,6 +23,7 @@ install:
 
 script:
     - phpunit --configuration phpunit.xml.dist --verbose
+#    - phpunit --coverage-clover=coverage.clover
 
 after_success:
     - wget https://scrutinizer-ci.com/ocular.phar
