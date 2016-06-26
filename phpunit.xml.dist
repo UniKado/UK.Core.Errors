@@ -2,7 +2,7 @@
 
 <phpunit colors="true" bootstrap="vendor/autoload.php">
    <testsuites>
-      <testsuite name="UniKado.Core.Errors Test Suite">
+      <testsuite name="UK.Core.Errors Test Suite">
          <directory suffix="Test.php">./tests/</directory>
       </testsuite>
    </testsuites>
