@@ -1,6 +1,6 @@
 {
     "name": "uk/core.errors",
-    "description": "The UniKado core exceptions and error handler.",
+    "description": "The UniKado core exceptions and error handlers.",
     "type": "library",
     "license": "LGPL-3.0",
     "authors": [
