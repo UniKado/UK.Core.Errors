@@ -9,14 +9,21 @@ matrix:
     - php: hhvm
   fast_finish: true
 
-before_script:
-    - travis_retry composer self-update
+sudo: false
+
+before_install:
+    - composer self-update
+
+install:
     - travis_retry composer install --no-interaction --prefer-source --dev
 
+#before_script:
+#    - travis_retry composer self-update
+#    - travis_retry composer install --no-interaction --prefer-source --dev
+
 script:
-    - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
+    - phpunit --configuration phpunit.xml.dist --verbose
 
 after_success:
     - wget https://scrutinizer-ci.com/ocular.phar
     - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
-    - bash <(curl -s https://codecov.io/bash)
