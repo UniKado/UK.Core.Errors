@@ -44,10 +44,10 @@ class CoreException extends \Exception
     * Init's a new instance.
     *
     * @param string     $message  The error message
-    * @param int        $code     The optional error code. (defaults to \E_ERROR)
+    * @param int|string $code     The optional error code. (defaults to \E_ERROR)
     * @param \Exception $previous Optional previous exception.
     */
-   public function __construct( string $message, int $code = \E_ERROR, \Exception $previous = null )
+   public function __construct( string $message, $code = \E_ERROR, \Exception $previous = null )
    {
 
       // Call the parent constructor (\Exception)
@@ -192,10 +192,10 @@ class CoreException extends \Exception
    /**
     * Returns a string, representing the defined error code.
     *
-    * @param  int $code e.g.: \E_USER_ERROR
+    * @param  int|string $code e.g.: \E_USER_ERROR
     * @return string
     */
-   public static function GetCodeName( int $code ) : string
+   public static function GetCodeName( $code ) : string
    {
 
       switch ( $code )
@@ -226,6 +226,10 @@ class CoreException extends \Exception
             return 'STRICT';
 
          default:
+            if ( \is_string( $code ) )
+            {
+               return $code;
+            }
             return 'OTHER';
 
       }
