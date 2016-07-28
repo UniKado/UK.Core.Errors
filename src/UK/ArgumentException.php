@@ -5,7 +5,7 @@
  * @package        UK
  * @since          2016-07-28
  * @subpackage     Errors
- * @version        0.1.1
+ * @version        0.1.2
  */
 
 
@@ -21,7 +21,7 @@ use UK\Exception as UKException;
 /**
  * The UK\ArgumentException class.
  *
- * @since v0.1.1
+ * @since v0.1.2
  */
 class ArgumentException extends UKException
 {
