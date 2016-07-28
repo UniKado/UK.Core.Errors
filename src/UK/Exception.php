@@ -7,7 +7,7 @@
  * @package        UK
  * @since          2016-04-29
  * @subpackage     Errors
- * @version        0.1.0
+ * @version        0.1.1
  */
 
 

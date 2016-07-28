@@ -3,7 +3,7 @@
  * @author         UniKado <unikado+pubcode@protonmail.com>
  * @copyright  (c) 2016, UniKado
  * @since          2016-06-25
- * @version        0.1.0
+ * @version        0.1.1
  */
 
 
