@@ -16,3 +16,14 @@ warnings and notices.
 ```bash
 composer require uk/core.errors
 ```
+
+or include it inside you're composer.json
+
+```json
+{
+   "require": {
+      "php": ">=7.0",
+      "uk/core.errors": "^0.1.2"
+   }
+}
+```
